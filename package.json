@@ -1,0 +1,30 @@
+{
+  "name": "profiler",
+  "version": "1.0.0",
+  "description": "A profile page that helps you keep an updated profile and while at it, you may like to note interesting ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/phayVor/profiler.git"
+  },
+  "keywords": [
+    "profile",
+    "notes",
+    "'take",
+    "note'",
+    "ui",
+    "ux",
+    "'learn",
+    "web",
+    "design'"
+  ],
+  "author": "Fayvor George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/phayVor/profiler/issues"
+  },
+  "homepage": "https://gitlab.com/phayVor/profiler#README"
+}
