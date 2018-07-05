@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Profiler</title>
+  <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Profile header section -->
+  <header class="header__container">
+    <h2 class="header__title">Profiler</h2>
+    <p class="header__subtitle">This is my Profile page</p>
+    <button class="header__share button">
+      <i class="fas fa-retweet"></i>
+    </button>
+  </header>
+
+  <!-- Main wrapper -->
+  <div class="body__wrapper">
+    <!-- Profile card section -->
+    <section class="card">
+      <img src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/24177012_1476620579039630_5513430156752909895_n.jpg?_nc_cat=0&oh=9e672968732bf37e316305c63b8d8f6d&oe=5BA1E018"
+        alt="John" style="width:100%">
+      <h1>Fayvor George</h1>
+      <p class="title">Software Developer</p>
+      <p>LearnFactory Nigeria</p>
+      <div style="margin: 24px 0;">
+        <a href="#">
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p>
+        <button>Contact Me</button>
+      </p>
+    </section>
+
+    <!-- interact -->
+    <section class="interact">
+      <div class="interact__container">
+        <h2 class="interact__title">Tell me your
+          <strong>Best Story</strong>
+        </h2>
+        <div class="interact__display"></div>
+        <div class="story__box"></div>
+        <div class="interact__input">
+          <form id="story__writer">
+            <textarea class="input" name="textarea" id="text-input" placeholder="start writing"></textarea>
+            <div class="btn__wrapper">
+              <button id="submit" class="btn--submit">
+                <i class="fab fa-telegram-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://rawgit.com/andrewjmead/d64087c46129fc58df67c361cb01e889/raw/0a5225ee0e4382059ba7e439a882ece94a6e27f4/uuidv4.js"></script>
+  <script src="/scripts/main-functions.js"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+
+</html>
