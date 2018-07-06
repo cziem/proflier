@@ -223,6 +223,12 @@ button:hover, a:hover {
   padding: .1rem;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
+  border: 1px solid #3a8d91;
+}
+
+.input:focus
+{
+  border: 1px solid #3a8d91;
 }
 
 .btn--submit
@@ -256,7 +262,9 @@ button:hover, a:hover {
   animation: headBounce 500ms
 }
 
-label .fas:hover
+label .fas:hover,
+.header__share:hover,
+.btn--submit:hover
 {
   animation: shifter 500ms
 }
