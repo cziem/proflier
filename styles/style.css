@@ -245,3 +245,59 @@ button:hover, a:hover {
 {
   margin: .5rem auto;
 }
+
+.card:hover
+{
+  animation: panelBounce 500ms
+}
+
+.connect i:hover
+{
+  animation: headBounce 500ms
+}
+
+/* Animations */
+@keyframes panelBounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes headBounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes shifter {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(-3px);
+  }
+}
