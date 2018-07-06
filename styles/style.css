@@ -256,6 +256,11 @@ button:hover, a:hover {
   animation: headBounce 500ms
 }
 
+label .fas:hover
+{
+  animation: shifter 500ms
+}
+
 /* Animations */
 @keyframes panelBounce {
   0%,
