@@ -32,12 +32,14 @@ const render = story => {
 
 // edit story
 const editStory = (id, text) => {
-  // const storyIndex = stories.findIndex(story => story.id === id);
+  const storyIndex = stories.findIndex(story => story.id === id);
 
-  // if (storyIndex > -1) {
-  //   const textarea = document.querySelector("#text-input");
-  //   textarea.value = text;
-  // }
+  if (storyIndex > -1) {
+    const textarea = document.querySelector("#text-input");
+    textarea.value = text;
+
+    // check for the story id and update rather than create new element
+  }
 };
 
 // remove a story
