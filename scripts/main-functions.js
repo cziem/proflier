@@ -30,6 +30,7 @@ const render = story => {
   story.forEach(story => storyBox.appendChild(generateDOM(story)));
 };
 
+/*
 // update story
 const updateStory = (id, text) => {
   // add the edited story to the existing one.
@@ -40,6 +41,7 @@ const updateStory = (id, text) => {
     });
   }
 };
+*/
 
 // edit story
 const editStory = (id, text) => {
@@ -48,7 +50,7 @@ const editStory = (id, text) => {
   if (storyIndex > -1) {
     const textarea = document.querySelector("#text-input");
     textarea.value = text;
-    updateStory(id, text);
+    // updateStory(id, text); fix this fn
     // check for the story id and update rather than create new element
   }
 };
