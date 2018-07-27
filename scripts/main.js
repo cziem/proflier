@@ -8,7 +8,7 @@ const storyWriter = document.querySelector("#story__writer");
 
 const userStory = {
   text: "",
-  id: 'id-'
+  id: "id-"
 };
 
 // show existing stories
@@ -26,16 +26,15 @@ storyWriter.addEventListener("submit", e => {
     stories.push({
       text,
       id: uuidv4()
-    })
+    });
 
-    e.target.elements.textarea.value = ""
+    e.target.elements.textarea.value = "";
     display.textContent = "";
     display.style.padding = "0";
 
     saveStory(stories);
     render(stories);
   }
-
 });
 
 // typewritter effect
@@ -43,8 +42,3 @@ storyWriter.addEventListener("keyup", e => {
   userStory.text = e.target.value.trim();
   showStory(userStory);
 });
-
-// setup deleteStory
-// document.querySelector('#cut').addEventListener('click', () => {
-//   console.log('cliked')
-// })
