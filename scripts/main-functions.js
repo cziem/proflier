@@ -30,6 +30,17 @@ const render = story => {
   story.forEach(story => storyBox.appendChild(generateDOM(story)));
 };
 
+// update story
+const updateStory = (id, text) => {
+  // add the edited story to the existing one.
+  const storyIndex = stories.findIndex(story => story.id === id);
+  if (storyIndex > -1) {
+    stories.forEach(story => {
+      story.text = text;
+    });
+  }
+};
+
 // edit story
 const editStory = (id, text) => {
   const storyIndex = stories.findIndex(story => story.id === id);
@@ -37,7 +48,7 @@ const editStory = (id, text) => {
   if (storyIndex > -1) {
     const textarea = document.querySelector("#text-input");
     textarea.value = text;
-
+    updateStory(id, text);
     // check for the story id and update rather than create new element
   }
 };
